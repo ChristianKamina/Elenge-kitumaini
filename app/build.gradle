@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.youthfimodd.elenges"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 8
+        versionName "2.0.8"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.3.0'
+
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.firebaseui:firebase-ui-database:0.4.4'
+    implementation 'com.google.firebase:firebase-core:18.0.0'
+
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:21.0.1'
+    implementation 'com.google.firebase:firebase-firestore:23.0.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:runner:1.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //ajout
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.github.bumptech.glide:glide:4.0.0'
+    implementation 'com.github.clans:fab:1.6.4'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+    implementation 'com.android.volley:volley:1.2.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //Times Formater
+    implementation 'org.ocpsoft.prettytime:prettytime:4.0.1.Final'
+    //image cropper
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    //
+    implementation 'com.raycoarana.codeinputview:codeinputview:1.1.3'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+    //loading
+    implementation 'com.github.AgnaldoNP:AGSkeletonLoading:1.2'
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccueilActivity">
+
+    <AdapterViewFlipper
+        android:id="@+id/ViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+    </AdapterViewFlipper>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <Button
+                android:id="@+id/btnUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="true"
+                android:background="@drawable/bordure_vert"
+                android:backgroundTint="@color/colorNoirLeger"
+                android:text="@string/users"
+                android:textColor="@color/colorBlanche" />
+
+            <Button
+                android:id="@+id/btnParrain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="true"
+                android:background="@drawable/bordure_vert"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="@string/mentor"
+                android:textColor="@color/colorBlanche"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="459dp" />
+
+            <Button
+                android:id="@+id/btnPairEd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:textAllCaps="true"
+                android:background="@drawable/bordure_vert"
+                android:backgroundTint="@color/likeBtnVer"
+                android:text="@string/paireduc"
+                android:textColor="@color/colorBlanche" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

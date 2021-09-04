@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ParametreFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Général"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:textColor="@color/colorNoir"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Langue"
+                    android:layout_width="match_parent"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNoir"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Français"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/tabIndicatorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/notifications"
+                    android:text="Notification"
+                    android:textColor="@color/colorNoir"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/notifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="message de notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_notification"
+                        android:layout_width="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/tabIndicatorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Son"
+                    android:textColor="@color/colorNoir"
+                    android:text="Sonnorisation"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/Son"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="(chocolat) par défaut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/tabIndicatorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/vibration"
+                    android:text="Vibration"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_below="@+id/vibration"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Vibration notification"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/colorNoir"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch_vibration"
+                        android:layout_width="50dp"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_height="wrap_content"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:background="@color/tabIndicatorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/Elenge_Maps"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/colorNoir"
+                    android:text="Elenge Maps"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Enregistrement des noveaux points géographique"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/tabIndicatorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/politique_de_confindetialite"
+                    android:textColor="@color/colorNoir"
+                    android:text="Politique de confindetialité"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/tabIndicatorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/terme_et_conditions"
+                    android:textColor="@color/colorNoir"
+                    android:text="Terme et Conditions"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="@color/tabIndicatorGray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/evaluer"
+                    android:textColor="@color/colorNoir"
+                    android:text="Notez nous"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

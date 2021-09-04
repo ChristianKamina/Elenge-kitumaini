@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_news"
+        android:icon="@drawable/ic_fiber_new_black"
+        android:title="Je m'informe" />
+    <item
+        android:id="@+id/nav_vbg"
+        android:icon="@drawable/ic_baseline_wc"
+        android:title="Parlons Violences BG" />
+    <item
+         android:id="@+id/nav_kitumaini"
+         android:icon="@drawable/ic_baseline_camera"
+         android:title="Kitumaini" />
+  </group>
+  <item android:title=" ">
+    <menu>
+      <item
+          android:id="@+id/nav_forum"
+          android:icon="@drawable/ic_forum_black"
+          android:title="Je m'exprime" />
+      <item
+          android:id="@+id/nav_chat"
+          android:icon="@drawable/ic_chat_black"
+          android:title="Plus près de moi" />
+      <item
+          android:id="@+id/nav_jassure"
+          android:icon="@drawable/ic_center_focus_strong_black"
+          android:title="J'en ai, j'assure" />
+    </menu>
+  </item>
+  <item android:title=" ">
+    <menu>
+      <item
+          android:id="@+id/nav_learn"
+          android:icon="@drawable/ic_baseline_emoji_symbols"
+          android:title="J'apprends, J'assure" />
+      <item
+          android:id="@+id/nav_liens"
+          android:icon="@drawable/ic_baseline_insert_link"
+          android:title="Liens utils" />
+      <item
+          android:id="@+id/nav_setting"
+          android:icon="@drawable/ic_settings_black"
+          android:title="Paramètres" />
+      <item
+          android:id="@+id/nav_deconnexion"
+          android:icon="@drawable/ic_settings_power_black"
+          android:title="Deconnection" />
+    </menu>
+  </item>
+
+</menu>

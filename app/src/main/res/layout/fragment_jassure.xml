@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.JassureFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Texte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Faites une recherche rapide pour vous assurer. Appuiyez sur la carte!"
+            android:textSize="20sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+        <ImageButton
+            android:id="@+id/maps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Texte"
+            android:fitsSystemWindows="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher_maps"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

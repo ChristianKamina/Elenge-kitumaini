@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_3"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/btn_okay_dialog_addList"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/skip_icon"
+                app:tint="@color/colorBleu" />
+
+            <ImageButton
+                android:id="@+id/btn_close_dialog_addList"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_close"
+                app:tint="@color/colorRedDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="120dp"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing_mlarge">
+
+            <ImageView
+                android:id="@+id/img_maps"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_baseline_add_a_photo"/>
+
+            <EditText
+                android:id="@+id/maps_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bordurerondvert"
+                android:hint="Nom du lieu"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/maps_type"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bordurerondvert"
+                android:hint="Type"
+                android:inputType="textPostalAddress"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Ex: Centre, Justice, Police"/>
+
+            <EditText
+                android:id="@+id/maps_address"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bordurerondvert"
+                android:hint="Adresse"
+                android:inputType="textPostalAddress"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/maps_prestataire"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bordurerondvert"
+                android:hint="Prestataire"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/maps_phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bordurerondvert"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/maps_coord_lat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bordurerondvert"
+                android:hint="Coordonnée_lat"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/maps_coord_log"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/bordurerondvert"
+                android:hint="Coordonnée_log"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/map_get_coordinate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_large"
+                android:background="@drawable/bordurerondvert"
+                android:backgroundTint="@color/colorBleu"
+                android:paddingLeft="@dimen/spacing_mlarge"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:paddingRight="@dimen/spacing_mlarge"
+                android:text="get coordonnée"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

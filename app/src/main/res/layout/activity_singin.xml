@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="0dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inscrivez-vous ici  "
+                    android:layout_marginTop="-10dp"
+                    android:layout_gravity="center"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp"
+                    app:drawableEndCompat="@drawable/ic_baseline_arrow_downward" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"/>
+                <EditText
+                    android:id="@+id/idnom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingStart="15sp"
+                    android:background="@drawable/bordure_sing"
+                    android:inputType="textPersonName"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sexe"
+                    android:textStyle="normal"
+                    android:layout_marginTop="26dp"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/rb_man"
+                            android:text="Homme"
+                            android:checked="true"
+                            android:textColor="@color/colorBleu"
+                            android:gravity="center"
+                            app:drawableStartCompat="@drawable/ic_man"
+                            android:background="@drawable/bordure_sing" />
+
+                        <RadioButton
+                            android:layout_width="130dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="20dp"
+                            android:id="@+id/rb_woman"
+                            android:textColor="@color/colorBleu"
+                            android:gravity="center"
+                            android:background="@drawable/bordure_sing"
+                            android:text="Femme"
+                            app:drawableStartCompat="@drawable/ic_woman"/>
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Téléphone"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"
+                    android:layout_marginTop="26dp"/>
+                <EditText
+                    android:id="@+id/idTelphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="15sp"
+                    android:background="@drawable/bordure_sing"
+                    android:inputType="phone"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ville"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"
+                    android:layout_marginTop="26dp"/>
+                <EditText
+                    android:id="@+id/idVille"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="15sp"
+                    android:background="@drawable/bordure_sing"
+                    android:inputType="text"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tranche d'age"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"
+                    android:layout_marginTop="26dp"/>
+                <Spinner
+                    android:id="@+id/spinerAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="15sp"
+                    android:background="@drawable/bordure_sing"
+                    android:elevation="06dp"
+                    android:fitsSystemWindows="true"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="type user"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"
+                    android:layout_marginTop="26dp"/>
+                <TextView
+                    android:id="@+id/spinnerTyUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@drawable/bordure_sing"
+                    android:elevation="06dp"
+                    android:fitsSystemWindows="true"
+                    android:hint="Type User"
+                    android:textAlignment="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"
+                    android:layout_marginTop="26dp"/>
+                <EditText
+                    android:id="@+id/idEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:paddingStart="15sp"
+                    android:background="@drawable/bordure_sing"
+                    android:inputType="textEmailAddress"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mot de passe"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBleu"
+                    android:textSize="15sp"
+                    android:layout_marginTop="26dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/idEngglag"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/idPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="15sp"
+                        android:layout_below="@+id/spinerAge"
+                        android:background="@drawable/bordure_sing"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/PrivatePolicy"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/cb_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/txt_accept_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/accept_terms"
+                        android:textColor="@color/colorBleu"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnInscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bordurerondvert"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="S'inscrire"
+                    android:textColor="@color/colorBlanche"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:layout_marginTop="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</RelativeLayout>

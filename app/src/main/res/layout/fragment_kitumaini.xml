@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.KitumainiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="INFORMATIONS DE BASE SUR L'ELEVE"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBleu"
+                        android:textAlignment="center"
+                        android:textSize="20sp"/>
+
+                    <ImageView
+                        android:id="@+id/kitu_add_profile"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@mipmap/ic_launcher_profil2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nom au cpmplet"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorBleu"
+                        android:textSize="15sp"
+                        android:layout_marginTop="25sp"/>
+                    <EditText
+                        android:id="@+id/id_kitu_nom"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingStart="15sp"
+                        android:background="@drawable/bordure_sing"
+                        android:inputType="textPersonName"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sexe"
+                        android:textStyle="normal"
+                        android:layout_marginTop="26dp"
+                        android:textColor="@color/colorBleu"
+                        android:textSize="15sp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:id="@+id/kitu_radio_group"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="130dp"
+                                android:layout_height="35dp"
+                                android:id="@+id/kitu_rb_man"
+                                android:text="Homme"
+                                android:checked="true"
+                                android:textColor="@color/colorBleu"
+                                android:gravity="center"
+                                app:drawableStartCompat="@drawable/ic_man"
+                                android:background="@drawable/bordure_sing" />
+
+                            <RadioButton
+                                android:layout_width="130dp"
+                                android:layout_height="35dp"
+                                android:layout_marginStart="20dp"
+                                android:id="@+id/kitu_rb_woman"
+                                android:textColor="@color/colorBleu"
+                                android:gravity="center"
+                                android:background="@drawable/bordure_sing"
+                                android:text="Femme"
+                                app:drawableStartCompat="@drawable/ic_woman"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date de naissance"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorBleu"
+                        android:textSize="15sp"
+                        android:layout_marginTop="26dp"/>
+                    <EditText
+                        android:id="@+id/id_kitu_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingStart="15sp"
+                        android:background="@drawable/bordure_sing"
+                        android:inputType="date"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Adresse complete"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorBleu"
+                        android:textSize="15sp"
+                        android:layout_marginTop="26dp"/>
+                    <EditText
+                        android:id="@+id/id_kitu_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingStart="15sp"
+                        android:background="@drawable/bordure_sing"
+                        android:inputType="text"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Téléphone"
+                        android:textStyle="normal"
+                        android:textColor="@color/colorBleu"
+                        android:textSize="15sp"
+                        android:layout_marginTop="26dp"/>
+                    <EditText
+                        android:id="@+id/id_kitu_Phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:paddingStart="15sp"
+                        android:background="@drawable/bordure_sing"
+                        android:inputType="phone"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/kitu_btn_save"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bordurerondvert"
+                        android:backgroundTint="@color/colorBleu"
+                        android:text="S'inscrire"
+                        android:textColor="@color/colorBlanche"
+                        android:textColorHint="@color/colorBleu"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/kitu_test_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="20dp"
+                        android:fitsSystemWindows="true"
+                        android:src="@drawable/add"
+                        android:tint="@color/colorBlanche"
+                        android:backgroundTint="@color/colorBleu" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

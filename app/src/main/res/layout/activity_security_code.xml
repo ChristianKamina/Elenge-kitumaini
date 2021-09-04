@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecurityCodeActivity">
+
+    <ScrollView
+        android:background="@color/colorBlanche"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:background="@drawable/rectangle_bc"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_gravity="center"
+                            android:src="@mipmap/logo_elenge"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="sans-serif"
+                            android:layout_gravity="center"
+                            android:text=" Pin de sécurité "
+                            android:textColor="@color/colorBlanche"
+                            android:textSize="35sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="30dp"
+                    android:padding="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.core.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:padding="20sp"
+                            android:backgroundTint="@color/colorBlanche">
+
+                            <TextView
+                                android:id="@+id/txt_PinName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:fontFamily="sans-serif"
+                                android:textAlignment="center"
+                                android:hint="Saisissez le code qui vous a été donné"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="25sp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/RecPwdeT"
+                                android:layout_width="match_parent"
+                                android:layout_height="58dp"
+                                android:layout_centerHorizontal="true"
+                                app:passwordToggleEnabled="true"
+                                android:layout_below="@id/txt_PinName">
+
+                                <EditText
+                                    android:id="@+id/RecPwde"
+                                    android:hint="Saisir le pin"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20sp"
+                                    android:paddingStart="12dp"
+                                    android:paddingEnd="12dp"
+                                    android:background="@drawable/custom_input"
+                                    android:textColor="@color/colorPrimary"
+                                    android:drawablePadding="12dp"
+                                    android:padding="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    android:inputType="number"/>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </RelativeLayout>
+
+                    </androidx.core.widget.NestedScrollView>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear1"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnRecP"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_inscription_bg"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingLeft="70dp"
+                    android:paddingRight="70dp"
+                    android:text="Entrer"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlanche"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMSG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/no_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/no_message"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/lienLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+        <include layout="@layout/loading_tchat"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/contact1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        android:padding="11dp"
+        android:src="@drawable/ic_person"
+        android:tint="@color/colorBlanche"
+        android:backgroundTint="@color/colorPrimary" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="1dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Cmnt_profil_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_launcher_profil2" />
+
+    <RelativeLayout
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/Cmnt_profil_image"
+        android:paddingBottom="@dimen/spacing_xsmall">
+
+        <TextView
+            android:id="@+id/Cmnt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="User name"
+            android:textColor="@color/colorNoir"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/Cmnt_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cmnt_username"
+            android:layout_marginStart="5dp"
+            android:text="Commentaire...."
+            android:textColor="@color/colorNoir"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@drawable/background_left"/>
+
+        <TextView
+            android:id="@+id/cmnt_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Cmnt_txt"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="51dp"
+            android:text="31/07/2019"
+            android:textColor="@color/colorNoir"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cmnt_see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment"
+        android:visibility="gone"/>
+
+</RelativeLayout>

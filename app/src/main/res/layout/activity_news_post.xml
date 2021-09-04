@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_post_desc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsPostActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_users_post"
+                android:src="@mipmap/elenge"
+                android:layout_width="60dp"
+                android:layout_height="60dp"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/img_users_post"
+                android:layout_marginStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_users_post"
+                    android:text="Ngams Tamfutu"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/antic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:id="@+id/ln_tout_le_monde"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_linear"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_tout_le_monde"
+                        android:src="@drawable/ic_public"
+                        android:layout_width="20dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_height="20dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_tout_le_monde"
+                        android:text="Tout le monde"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:src="@drawable/ic_arrow_drop_down"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_4"
+            android:layout_below="@id/rl"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText"
+                android:background="@color/colorBlanche"
+                android:textColor="@color/colorNoir"
+                android:padding="10dp"
+                android:hint="Partager une photo, un article, une video ou une idée dans le forum"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:visibility="visible"
+                android:layout_below="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/ic_add_picture">
+
+                <ImageView
+                    android:id="@+id/new_post_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="80dp"
+                    android:scaleType="centerCrop" />
+
+                <LinearLayout
+                    android:id="@+id/line_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true">
+
+                    <TextView
+                        android:id="@+id/txt_modifier"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_linear"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Modifier"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorBleu" />
+
+                    <ImageView
+                        android:id="@+id/img_cancel"
+                        android:layout_width="50dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_height="50dp"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_baseline_close"
+                        app:tint="@color/colorBleu" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/new_post_progress"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGrisCmnt"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imgcamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_a_photo" />
+
+        <ImageView
+            android:id="@+id/imgvideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_baseline_video_call" />
+
+        <ImageView
+            android:id="@+id/add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/ic_baseline_add_photo_alternate" />
+
+        <ImageView
+            android:id="@+id/imgplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:src="@drawable/ic_more_horiz" />
+
+        <Button
+            android:id="@+id/post_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="Publier"
+            android:textColor="@color/colorNoir"
+            android:background="@color/colorTransp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

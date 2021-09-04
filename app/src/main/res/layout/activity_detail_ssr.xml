@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bordure_ssr"
+    tools:context=".DetailSsrActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnLearmMore">
+
+            <com.github.barteksc.pdfviewer.PDFView
+                android:id="@+id/textDescrip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:textStyle="bold"
+                android:gravity="center|fill"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimaryDark"/>
+            <TextView
+                android:id="@+id/txtweb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textDescrip"
+                android:gravity="center"
+                android:textColor="@color/colorTransp"/>
+
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnLearmMore"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bordure_ssr"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/en_savoir_plus"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlanche" />
+
+</RelativeLayout>

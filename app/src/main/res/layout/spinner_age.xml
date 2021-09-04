@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:ellipsize="marquee"
+    android:orientation="vertical"
+    android:singleLine="true"
+    android:layout_gravity="center_horizontal"
+    android:text="Tanche d'age"
+    android:textColor="@color/colorPrimary"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:textSize="25sp">
+
+</CheckedTextView>

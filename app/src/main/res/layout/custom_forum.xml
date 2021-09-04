@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relat_forum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_margin="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/blog_user_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher_profil2"/>
+
+        <LinearLayout
+            android:id="@+id/line_forum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/blog_user_image">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/blog_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNoir"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:id="@+id/blog_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status"
+                    android:visibility="gone"
+                    android:textColor="@color/colorGris"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/blog_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11/05/2021"
+                    android:textColor="@color/colorGris"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/blog_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Descrpition publication"
+                android:textStyle="bold"
+                android:textColor="@color/colorNoir"
+                android:paddingBottom="5dp"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:id="@+id/forum_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:cardElevation="@dimen/cardview_default_elevation"
+                    app:cardCornerRadius="10dp">
+                    <RelativeLayout
+                        android:background="?android:attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/blog_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_launcher"/>
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/blog_like_btn"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@drawable/ic_baseline_favorite_border"/>
+
+                <TextView
+                    android:id="@+id/blog_like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_toEndOf="@+id/blog_like_btn" />
+
+                <ImageView
+                    android:id="@+id/blog_share_btn"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/blogCmont"
+                    app:layout_constraintStart_toEndOf="@+id/blog_like_count"
+                    app:srcCompat="?attr/actionModeShareDrawable" />
+
+                <ImageView
+                    android:id="@+id/blogCmont"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:src="@drawable/ic_baseline_chat_bubble_outline" />
+
+                <TextView
+                    android:id="@+id/blog_comnt_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/blogCmont" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/likeBtnGris"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

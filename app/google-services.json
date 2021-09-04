@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "454094076084",
+    "firebase_url": "https://elenge-93476-default-rtdb.firebaseio.com",
+    "project_id": "elenge-93476",
+    "storage_bucket": "elenge-93476.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454094076084:android:51b8bef65a789c3df33fe1",
+        "android_client_info": {
+          "package_name": "com.youthfimodd.elenges"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454094076084-437j78nmq7kiknpkjlkghhr94h4vtkjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.youthfimodd.elenges",
+            "certificate_hash": "6826261f39783cd6f2ae903ac6231e5aee37fb88"
+          }
+        },
+        {
+          "client_id": "454094076084-1iesngh1dpilvci1tvvkv90qoho0vst0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzOxAXoLgyFjGoEcMvza5ixhIDUGZjmBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454094076084-1iesngh1dpilvci1tvvkv90qoho0vst0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

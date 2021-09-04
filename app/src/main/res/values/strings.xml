@@ -1,0 +1,166 @@
+<resources>
+    <string name="app_name">Elenge</string>
+    <string name="mentor">Connectez-vous en mode Mentor</string>
+    <string name="paireduc">Connectez-vous en mode Pair Educateur</string>
+    <string name="users">Connectez-vous en mode Simple</string>
+    <string name="signup_now">Créer ici</string>
+    <string name="title_activity_main2">Elenge</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Username</string>
+    <string name="nav_header_subtitle">InterestConcept@android.ic</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Parametres</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="singOut">Se déconnecter</string>
+    <string name="accept_terms">I accept <u>terms and conditions</u></string>
+    <string name="accept_terms_please">You must accept terms and conditions</string>
+    <string name="mustAcceptTerms">You must accept terms and conditions</string>
+
+    <!-- TODO: URL des déscouvertes -->
+    <string name="URLContraception">www.who.int/fr/news-room/fact-sheets/detail/emergency-contraception</string>
+    <string name="URLPlaniF">planificationfamiliale-rdc.net</string>
+    <string name="URLVih">www.passeportsante.net/fr/Maux/Problemes/Fiche.aspx?doc=sida_pm</string>
+    <string name="URLGrossesse">www.who.int/fr/news-room/fact-sheets/detail/adolescent-pregnancy</string>
+    <string name="URLTuberculose">www.passeportsante.net/fr/Maux/Problemes/Fiche.aspx?doc=tuberculose_pm</string>
+    <string name="URLInfections">www.who.int/fr/news-room/fact-sheets/detail/sexually-transmitted-infections-(stis)</string>
+    <string name="URLMortalité">www.who.int/fr/news-room/fact-sheets/detail/maternal-mortality</string>
+    <string name="URLMutilation">www.who.int/fr/news-room/fact-sheets/detail/fermale-genital-mutilation</string>
+    <string name="URLNaiss">www.who.int/fr/news-room/fact-sheets/detail/preterm-birth</string>
+    <string name="URLNée">www.who.int/fr/news-room/fact-sheets/detail/newborns-reducing-mortality</string>
+    <string name="URLAvorter">www.who.int/fr/news-room/fact-sheets/detail/preventing-unsafe-abortion</string>
+    <string name="URLViolence">www.who.int/fr/news-room/fact-sheets/detail/violence-against-women</string>
+
+
+    <!-- TODO: Information sur les découvertes -->
+    <string name="Malaria">Detail sur la malaria. Ceci est un exemple du document à partager sur le media</string>
+    <string name="PlaniF">Detail sur la Planification Familiale. Ceci est un exemple du document à partager sur le media</string>
+    <string name="VihSida">Detail sur le Vih. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Diabete">Detail sur la Diabete. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Tuberculose">Detail sur la Tuberculose. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Ebola">Detail sur Ebola. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Contraception">Detail sur la Contraception. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Grossesse">Detail sur la Grossesse. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Infection">Detail sur les Infections. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Mortalite">Detail sur la Mortalite. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Mutilations">Detail sur la Mutilations. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Naissances">Detail sur la Naissances. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Nouveau">Detail sur le Nouveaux Née. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Préventions">Detail sur la Préventions. Ceci est un exemple du document à partager sur le media</string>
+    <string name="Violence">Detail sur la Violence. Ceci est un exemple du document à partager sur le media</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="detail_sur_elenge">
+        Eléngé est une application conbinant à la fois un réseau social et une application sur l éducation des jeunes filles et garçons
+        sur la Santé Sexuelle et Réproductive. Une recherche maps des centres hostipaliers les plus proche et une communication directe
+        avec des Spécialistes et Pair Educateurs formés y sont inclut
+    </string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titre_de_l_image">Titre de l\'image</string>
+    <string name="aper_u_de_l_image">Aperçu de l\'image</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Useur_mode">La mode Simple est réservé à tout utilisateur cherchant une aide sur la Santé.</string>
+    <string name="Parrain_mode">La mode Parrain est réservé aux utilisateurs spécialisé dans le domaine de la Santé. Ces utilisateurs sont des médecins de votre arrondissement qui ont suivies une formation. Cette mode est accessible par un Code Pin reçu lors de la formation.</string>
+    <string name="PairEd_mode">Cette mode est spécialement réservé au Pair Educateur, qui est une personne choisie par sa communauté, ayant reçu une formation dans le domaine de la Communication pour le Changement de Comportement, les IST et VIH/SIDA pour la réalisation de sensibilité. Cette mode est accessible par un Code Pin reçu lors de la formation.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="PolitiqueConf">
+        <p>
+            <ul>
+                <li>
+                    [Interest Concept/Youthfim] built the E-léngé app as [open source/free/freemium/ad-supported/commercial] app.
+                    This SERVICE is provided by[Interest Concept/Youthfim] [at no cost] and is intended for use as is. <n />
+                </li>
+            </ul>
+        </p>
+        <p>
+            <ul>
+                <li>
+                    This page is used to inform visitors regarding [my/our] policies with the collection, use,
+                    and disclosure of Personal Information if anyone decided to use [my/our] Service.<n />
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    If you choose to use [my/our] Service, then you agree to the collection and use of information in relation to this policy.
+                    The Personal Information that [I/We] collect is used for providing and improving the Service. [I/We] will not use or share
+                    your information with anyone except as described in this Privacy Policy.
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <ul>
+                <li>
+                    <n>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at
+                    E-léngé unless otherwise defined in this Privacy Policy.</n>
+                </li>
+            </ul>
+        </p>
+
+        <p>
+            <n><b>INFORMATION COLLECTION AND USE</b></n>
+            <ul>
+                <li>
+                    For a better experience, while using our Service, [I/We] may require you to provide us with certain personally identifiable information[add whatever else you collect here, e.g. users name, address, location, pictures] <br />
+                    The information that [I/We] request will be [retained on your device and is not collected by [me/us] in any way]/[retained by us and used as described in this privacy policy].
+                </li>
+            </ul>
+        </p>
+
+
+    </string>
+    <string name="en_savoir_plus">En savoir plus</string>
+    <string name="description_du_bloc">Description du bloc</string>
+
+    <!--Titles-->
+    <string name="first_slide_title">  </string>
+    <string name="second_slide_title">  </string>
+    <string name="third_slide_title">  </string>
+    <string name="fourth_slide_title">  </string>
+
+    <!--Descriptions-->
+    <string name="first_slide_desc">
+       Fournir des informations fiables, complètes et précises sur la Santé Sexuelle et Reproductive en temps réel.
+    </string>
+    <string name="second_slide_desc">
+        Ramener les jeunes à utiliser les nouvelles technologies à des fins utiles.
+    </string>
+    <string name="third_slide_desc">
+        Donner la possibilité aux jeunes d’interagir directement avec un prestataire de service et les experts de la
+     Sante des adolescents à un temps record tout en leur donnant la possibilité d’obtenir les différents services sur ce domaine.
+    </string>
+    <string name="fourth_slide_desc">
+        Faire ressortir des sujets que les gens considèrent « tabous »
+    </string>
+
+    <!--Buttons-->
+    <string name="skip_btn">Sauter</string>
+    <string name="next_btn">Suivant</string>
+    <string name="let_get_started">Commençons</string>
+    <string name="profil">Profil</string>
+    <string name="taper_un_message">Envoyer un message…</string>
+    <string name="votre_commentaire">Votre commentaire…</string>
+    <string name="e_lenge_jeunes_sant"><![CDATA[E-lenge: Jeunes & Santé]]></string>
+    <string name="tout_savoir_sur_le_vbg">Tout savoir sur le VBG</string>
+    <string name="signaler_un_acte_de_vbg">Signaler un acte de VBG</string>
+    <string name="localiser_un_centre_de_sant">Coin santé</string>
+    <string name="contacter_la_police">Coin de la police</string>
+    <string name="th_matiques">Thématiques</string>
+    <string name="coin_du_juriste">Coin du Juriste</string>
+    <string name="mettre_jour">Mettre à Jour</string>
+
+</resources>

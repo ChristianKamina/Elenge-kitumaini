@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlogcmntActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_user_forum"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/blog_nameUpost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_toEndOf="@+id/img_user_forum"
+                    android:text="User Name"
+                    android:textColor="@color/colorNoir"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_user_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/blog_nameUpost"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/img_user_forum"
+                    android:text="Statut User"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txt_user_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_user_status"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_toEndOf="@+id/img_user_forum"
+                    android:text="6j" />
+
+                <ImageView
+                    android:id="@+id/img_more"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:visibility="invisible"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_more" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_1"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/blog_descrip"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorNoir"
+                    android:text="@string/first_slide_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/blogCmnt_img"
+                    android:src="@drawable/logo"
+                    android:layout_below="@+id/blog_descrip"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+                <RelativeLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/blogCmnt_img"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_like"
+                        android:background="@drawable/bg_like"
+                        android:padding="3dp"
+                        android:src="@drawable/ic_like"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_share"
+                        android:src="@drawable/ic_menu_share"
+                        android:layout_toEndOf="@+id/img_like"
+                        android:background="@drawable/bg_like"
+                        android:padding="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_send"
+                        android:src="@drawable/ic_send"
+                        android:layout_toEndOf="@+id/img_share"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/bg_like"
+                        android:padding="3dp"
+                        android:visibility="invisible"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_number_all"
+                        android:layout_toEndOf="@+id/img_send"
+                        android:layout_width="wrap_content"
+                        android:text="154"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="-18dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/txt_number_comment"
+                        android:layout_alignParentEnd="true"
+                        android:text="1 Commentaire"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <View
+                        android:id="@+id/views"
+                        android:background="@color/tabIndicatorGray"
+                        android:layout_below="@+id/img_send"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="1dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/txt_comment"
+                    android:text="Commentaires"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorNoir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/txt_plus_pertinents"
+                    android:text="Les plus pertinents"
+                    android:layout_toStartOf="@+id/img_pertinent"
+                    android:textColor="@color/colorGris"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/img_pertinent"
+                    android:src="@drawable/ic_unfold"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="14dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:scrollbars="vertical"
+                    android:layout_below="@+id/txt_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="20dp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:background="@color/grey_10"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/blog_img_user"
+                android:src="@drawable/logo"
+                android:layout_marginTop="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <LinearLayout
+                android:id="@+id/ln_2"
+                android:layout_toEndOf="@+id/blog_img_user"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editCmnt"
+                    android:hint="Partagez votre opinion ici..."
+                    android:layout_marginTop="0dp"
+                    android:textSize="18sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal"
+                    android:background="@color/colorBlanche"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:paddingStart="8dp"
+                    android:inputType="textMultiLine"/>
+
+                <TextView
+                    android:id="@+id/blogCmnt_Add"
+                    android:text="Publier"
+                    android:textColor="@color/tabIndicatorGray"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_below="@+id/ln_2"
+                android:id="@+id/img_publier"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ln_1"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/rl_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_keyboard"
+                android:src="@drawable/ic_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/img_alternate"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_alternate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/img_cameras"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_baseline_add_a_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_publier_1"
+                android:text="Publier"
+                android:gravity="end"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

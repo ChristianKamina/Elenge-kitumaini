@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="230dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:padding="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="12dp"
+        card_view:contentPadding="3dp"
+        android:layout_margin="3dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="130dp"
+                android:background="@drawable/bordureblanche"
+                android:scaleType="centerCrop"
+                android:src="@drawable/botton_shadow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/find_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:hint="@string/titre_de_l_image"
+                    android:padding="4dp"
+                    android:textColor="@color/colorNoir"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/find_desc"
+                    android:layout_width="170dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="3dp"
+                    android:hint="@string/aper_u_de_l_image"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    android:textColor="@color/colorNoir"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:hint="Description du thématique"
+                    android:padding="4dp"
+                    android:textColor="@color/colorNoir"
+                    android:textSize="12sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

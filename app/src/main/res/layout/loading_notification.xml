@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relativeLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <aglibs.loading.skeleton.layout.SkeletonRelativeLayout
+            android:id="@+id/Loading_Notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_on"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="35dp"
+                android:src="@drawable/ic_notif_etat" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/notif_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:src="@color/tabIndicatorGray" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_toEndOf="@+id/notif_img">
+
+                <aglibs.loading.skeleton.view.SkeletonTextView
+                    android:id="@+id/notif_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Username"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <aglibs.loading.skeleton.view.SkeletonTextView
+                    android:id="@+id/notif_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notif_username"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="3dp"
+                    android:text="message...."
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/toolbar_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/notif_message"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+
+                    <aglibs.loading.skeleton.view.SkeletonTextView
+                        android:id="@+id/notification_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:textColor="@color/colorBleu"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </aglibs.loading.skeleton.layout.SkeletonRelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

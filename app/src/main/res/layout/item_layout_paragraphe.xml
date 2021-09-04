@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:cardElevation="20dp">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/txtQuestion"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:text="Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageButton
+            android:id="@+id/expandable_button"
+            android:layout_gravity="end"
+            android:layout_marginTop="-35dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_expand_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/expandable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/txtReponse"
+                android:textSize="18sp"
+                android:text="reponse"
+                android:justificationMode="inter_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txtEnSavoirPlus"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txtReponse"
+                android:text="En Savoir plus"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/imgPlay"
+                android:src="@drawable/ic_volume_down"
+                android:layout_marginStart="10dp"
+                android:layout_below="@+id/txtReponse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

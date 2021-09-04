@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/chat_elenge"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChatActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleEnabled="false"
+                android:fitsSystemWindows="true"
+                android:background="@color/colorPrimary"
+                app:contentScrim="?attr/colorPrimary">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/Chat_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_image_back"
+                        android:paddingEnd="10dp"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/toolbarimage"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/ic_launcher_profil2" />
+
+                    <LinearLayout
+                        android:id="@+id/lineStatut"
+                        android:layout_toEndOf="@id/profil_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="center|start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/usersname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="user_name"
+                            android:textColor="@color/colorBlanche"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+                        <TextView
+                            android:id="@+id/UserStatut"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="En ligne"
+                            android:textColor="@color/colorBlanche"
+                            android:textStyle="normal"
+                            android:textSize="12sp"/>
+
+                    </LinearLayout>
+
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include layout="@layout/content_chat"
+            android:layout_below="@id/appBar1"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+</RelativeLayout>
